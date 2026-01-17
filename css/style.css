@@ -73,7 +73,7 @@ h2{
 h3{
     font-family: "Lexend";
     font-size: var(--font-size-48);
-    font-weight: var(--black);
+    font-weight: var(--font-weight-bold);
 }
 
 input,
@@ -127,6 +127,13 @@ button {
 
 
 /* ----------header------- */
+
+
+
+
+
+
+
 
 .nav{
     display: flex;
@@ -207,6 +214,8 @@ button {
     background-size: cover;
     margin-top: -12.5rem;
     padding-bottom: 50px;
+    height: 1943;
+    width: 1440;
 }
 
 .content--tips__stop--img{
@@ -252,10 +261,11 @@ button {
 .tip--number--1{
     transform: rotate(-15deg);
     position: relative;
+    top: -10px;
     left: -20px;
 }
 
-.tip--img{
+.tip--img--right{
     justify-self:end ;
     align-self: self-end;
 }
@@ -269,7 +279,7 @@ button {
     right: -25%;
 }
 
-.tip--content--two{
+.tip--right{
     grid-area: right;
     justify-self: right;
     text-align: end;
@@ -282,11 +292,15 @@ button {
      left: 30%;
      bottom: 30px;
 }
+.tip--img--left {
+    justify-self: start;
+    align-self: self-end;
+}
 
 /* ---------challenge------- */
 
 .section--two{
-margin-top: 100px;
+margin-top: 120px;
 }
 
 .challenge--content{
@@ -320,25 +334,27 @@ color: var(--Orange);
 
 .content--tips__cone--img{
     position: relative;
-    left:43%;
-    top: 135px;
+    left:53%;
+    top: 20px;
     z-index: -1;
     transform: rotate(-10deg);
 }
 
 .section--three{
-    background-image: url(/assets/blue\ spoiled\ oil.png);
+    background-image: url("/assets/blue\ spoiled\ oil.png");
     background-size: cover;
     position: relative;
-    top: -370px;
-    min-height: min-content;
+    margin-top: -22rem;
+    height: 2350px;
+    width: 1440px;
+    margin-bottom: 100px;
 }
 
-.content--tips--three{
-    padding-top: 370px;
+.content--tips--two{
+    padding-top: 220px;
 }
 
-.content--tips--three  p{
+.content--tips--two  p{
     color: var(--Orange);
 }
 
@@ -346,11 +362,135 @@ color: var(--Orange);
     color: var(--Green);
 }
 
-.content--tips--three{
-    margin-top: 100px;
+/* --------------three tip --------- */
+
+.tip--number--3{
+    transform: rotate(-15deg);
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+/* -----------four tip------- */
+
+.tip--number--4{
+    transform: rotate(15deg);
+    position: relative;
+    top: 65px;
+    right: -35%;
+}
+
+/* -------------five tip-------- */
+
+.tip--five{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.tip--content--five{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.tip--content--five__text{
+    display: flex;
+    flex-direction: column;
+    width: 665px;
+    gap: 25px;
+}
+
+.tip--content--five__text h3{
+    text-align: center;
+}
+
+.tip--number--5{
+    transform: rotate(-15deg);
+    position: relative;
+    left: -15%;
+}
+
+/* -------benefits------- */
+
+.section--benefits__heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section--benefits h3 {
+    color: var(--Green);
+}
+
+.section--benefits__heading--triangle{
+    position: relative;
+    transform: rotate(-15deg);
+    left: -80px;
+    top: 30px;
+}
+
+.section--benefits__heading--cone{  
+    position: relative;
+    transform: rotate(15deg);
+    right: -80px;
+    top: 30px;
+}
+
+.section--benefits__title{
+    justify-self: center;
+    width: 700px;
+    color: var(--Blue);
+}
+
+.section--benefits__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section--benefits__content div{
+    width: 400px;
+}
+
+.middle--benefit{
+    width: 500px;
+}
+
+.middle--benefit > h3{
+    text-align: center;
+}
+
+.side--benefit{
+    padding-top: 270px;
+}
+
+.right--benefit p{
+    text-align: end;
 }
 
 
+.section--benefits__content--image{
+    justify-self: center;
+}
+
+/* -------footer------ */
+
+footer{
+    background-color: var(--Green);
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+
+
+
+
+.footer--terms
 
 
 
