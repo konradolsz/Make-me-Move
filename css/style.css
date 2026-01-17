@@ -40,7 +40,7 @@
 body {
     font-family: "Nunito", sans-serif;
     font-size: var(--font-size-32);
-    font-weight: var(--font-weight-32);
+    font-weight: var(--font-weight-semibold);
     line-height: 1.3;
     color: var(--black);
 }
@@ -67,7 +67,7 @@ h1{
 h2{
     font-size: var(--font-size-70);
     font-family: "Lexend";
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-bold);
 }
 
 h3{
@@ -194,7 +194,10 @@ button {
 .header--description__img{
     display: flex;
     align-items: center;
-
+}
+.header-description__img--cab{
+    position: relative;
+    right: -50px;
 }
 
 /* --------section one-------- */
@@ -203,14 +206,15 @@ button {
     background-image: url("/assets/orange\ spoiled\ oil.png");
     background-size: cover;
     margin-top: -12.5rem;
+    padding-bottom: 50px;
 }
 
 .content--tips__stop--img{
     transform: rotate(-15deg);
     position: relative;
     z-index: -1;
-    left: 30%;
-    top: 115px;
+    left: 34%;
+    top: 40px;
 }
 
 .content--tips__title{
@@ -230,18 +234,19 @@ button {
 
 /* ------first tip----- */
 
-.tip--content{
+.tip{
     display: grid;
     grid-template-areas: "left right";
     margin-bottom: 100px;
 }
 
-.tip--text{
+.tip--content{
     display: flex;
     flex-direction: column;
     gap: 1.5625rem;
     max-width: 660px;
     text-align: start;
+    color: var(--Dark-blue);
 }
 
 .tip--number--1{
@@ -260,71 +265,91 @@ button {
 .tip--number--2{
     transform: rotate(15deg);
     position: relative;
-    top:45px;
-    right: -50%;
+    top:60px;
+    right: -25%;
 }
 
-.tip--text--two{
+.tip--content--two{
     grid-area: right;
     justify-self: right;
+    text-align: end;
 }
-
-.tip--text--two h3 p{
-    text-align: end ;
-    
-}
-
-.tip--img--two{
-    justify-self: start;
-}
-
-/* ---------challenge------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .content--tips__triangle--img{
      transform: rotate(-15deg);
      position: relative;
      z-index: -1;
      left: 30%;
-     bottom: 80px;
+     bottom: 30px;
 }
 
+/* ---------challenge------- */
 
+.section--two{
+margin-top: 100px;
+}
 
+.challenge--content{
+    display: grid;
+    grid-template-areas: "left right";
+    margin-top: px;
+}
 
+.challenge--text {
+    position: relative;
+    display: flex;
+    grid-area: right;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 640px;
+    text-align: start;
+    color: var(--Dark-blue);
+    text-align: end;
+    top: -250px;
+}
 
+.challenge--text > h2{
+color: var(--Orange);
+}
 
+.challenge--img{
+    transform: rotate(-20deg);
+}
 
+/* ---------sectin two------- */
 
-
-
-
+.content--tips__cone--img{
+    position: relative;
+    left:43%;
+    top: 135px;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
 
 .section--three{
     background-image: url(/assets/blue\ spoiled\ oil.png);
     background-size: cover;
+    position: relative;
+    top: -370px;
+    min-height: min-content;
 }
+
+.content--tips--three{
+    padding-top: 370px;
+}
+
+.content--tips--three  p{
+    color: var(--Orange);
+}
+
+.section--three  h3{
+    color: var(--Green);
+}
+
+.content--tips--three{
+    margin-top: 100px;
+}
+
 
 
 
